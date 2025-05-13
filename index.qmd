@@ -1,26 +1,27 @@
 ---
-title: "Hi, I'm [Your Name Here]"
+title: "Hi, I'm George Barahona"
+description: "George Barahona - Data-Driven Marketing Analyst with expertise in CRM, Digital Strategy, and Data Visualization."
+keywords: [George Barahona, Marketing Analytics, Digital Marketing, CRM, R, Shiny]
 ---
 
 
 ::: {.columns}
 ::: {.column width="30%"}
-![](https://placehold.co/530x530?text=images/headshot.jpg){width=100% style="border-radius: 50%;"}
+![](link.jpeg){width=50% style="border-radius: 50%;"}
 :::
 ::: {.column width="70%" style="padding-left: 3rem;"}
-I'm a [your profession or area of focus]. I specialize in transforming complex information into clear, engaging, and actionable insights.
+With a strong background in data analysis, marketing strategy, and customer relationship management. Currently serving as an Individual Member Coordinator at the Specialty Equipment Market Association (SEMA), I bring a blend of analytical skills and marketing expertise to drive membership growth and enhance user experiences.
 :::
 :::
 
 ## About Me
 
-I hold a <span class="highlight">[Your Degree or Current Program]</span> from [Your Institution].
-
+My goal is to leverage data driven insights to develop innovative marketing strategies that enhance brand engagement and drive business growth. I am passionate about combining my technical skills in data analytics with my understanding of marketing principles to create impactful digital marketing campaigns that deliver measurable results.
 
 
 ## Let's Connect
 
-You can [email me](mailto:you@example.com) or connect on [LinkedIn](https://www.linkedin.com/in/your-profile).
+You can [email me](mailto:gbarahona1019@gmail.com) or connect on [LinkedIn](https://www.linkedin.com/in/george--barahona-)
 
 ---
 

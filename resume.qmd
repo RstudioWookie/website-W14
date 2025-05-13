@@ -2,17 +2,10 @@
 title: "Résumé"
 ---
 
-```{r knit-resume, echo=FALSE, message=FALSE}
-rmarkdown::render(
-  "resume/Resume.Rmd",
-  output_format = "pdf_document",
-  output_file   = "Resume.pdf",
-  output_dir    = "resume",
-  quiet         = TRUE
-)
-```
+You can view or download a PDF version of my résumé here:
 
-You can view a PDF version of my résumé [here](resume/Resume.pdf).
+📄 [Download My Résumé (PDF)](resume/George_Barahona_Resume_2025_.pdf){download=TRUE}
+
 
 # Professional Summary
 
@@ -20,36 +13,61 @@ Results-oriented marketing and analytics professional with a strong foundation i
 
 # Technical Skills
 
-- **Programming Languages:** R, Python, SQL, etc.  
-- **Web Technologies:** HTML, CSS/SCSS, JavaScript, Quarto, CMS Platforms, Analytics Tools
+-   **Programming Languages:** R, Python, SQL, etc.\
+-   **Web Technologies:** HTML, CSS/SCSS, JavaScript, Quarto, CMS Platforms, Analytics Tools
 
 # Education
 
-| Degree                             | Year                          | College / Department                 | Institution         |
-| ---------------------------------- | ----------------------------- | ------------------------------------ | ------------------- |
-| [Your Degree]                     | [Start – Graduation Year]     | [Your College or Department]        | [Your University]   |
-| [Previous Degree or Certification] | [Start – End Year]            | [Your College or Department]        | [Your University]   |
+| Degree | Year | College / Department | Institution |
+|-------------------|------------------|--------------------|-----------------|
+| M.S Digital Marketing | Expected 2025 | College of Business | Cal Poly Pomona |
+| BA in Business Administration | Completed | College of Business | California State University, Fullerton |
 
 # Work Experience
 
-### [Job Title], [Company or Organization]  
-*[Start Date – End Date]*
+### Individual Member Coordinator, Specialty Equipment Market Association (SEMA)
 
-- [Responsibility or accomplishment #1]  
-- [Responsibility or accomplishment #2]  
-- [Responsibility or accomplishment #3]  
-- [Technical tools, collaboration, or outcomes]  
-- [Any metrics, impacts, or stakeholder involvement]
+*Aug 2024 – Present*
 
----
+-    Supported the development and launch of SEMA+, a B2C membership program.
 
-### [Job Title], [Company or Organization]  
-*[Start Date – End Date]*
+-   Led reporting and CRM system integration across IT, marketing, and accounting.
 
-- [Responsibility or accomplishment #1]  
-- [Responsibility or accomplishment #2]  
-- [Team leadership, training, or development]  
-- [Projects involving marketing, data, or web technologies]  
-- [Toolset used or strategies implemented]
+-   Contributed to social strategy, influencer outreach, and campaign development.
 
----
+-    Engaged with partner brands to expand member benefits and offerings.
+
+-    Responded to inbound inquiries via Outlook.
+
+### Marketing & Leasing Coordinator, The Current / Asset Living
+
+*Oct 2023 – Aug 2024*
+
+-    Managed leasing operations and filled property to 100% occupancy ahead of schedule.
+
+-    Used social analytics tools to manage Instagram content and engagement.
+
+-    Planned and executed on-campus marketing initiatives and outreach efforts.
+
+### Learning & Development Technical Associate, Panda Restaurant Group
+
+*May 2022 – Jun 2023*
+
+-    Launched an internal Rosetta Stone campaign that resulted in full license usage and a waitlist.
+
+-    Maintained LMS operations to ensure compliance and learning support.
+
+-    Provided weekend and early-hour technical support through ServiceNow.
+
+-    Promoted online community values via training discussion facilitation.
+
+### Shift Leader, Chick-fil-A
+
+*Jan 2021 – Jan 2022*
+
+-    Designed training programs on cash handling and operational best practices.
+
+-    Supervised vault closures and final walk-throughs during nightly store shutdowns.
+
+-   Created educational content for staff across multiple operational shifts.
+e

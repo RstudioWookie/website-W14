@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="keywords" content="George Barahona, Marketing Analytics, Digital Marketing, CRM, R, Shiny">
-<meta name="description" content="George Barahona - Data-Driven Marketing Analyst with expertise in CRM, Digital Strategy, and Data Visualization.">
 
-<title>Hi, I’m George Barahona – YOUR NAME</title>
+<title>Marketing Analytics – YOUR NAME</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -32,6 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -68,7 +68,65 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-image","listing-description","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -90,11 +148,11 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./marketing-analytics.html"> 
+    <a class="nav-link active" href="./marketing-analytics.html" aria-current="page"> 
 <span class="menu-text">Marketing Analytics</span></a>
   </li>  
   <li class="nav-item">
@@ -121,24 +179,18 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#about-me" id="toc-about-me" class="nav-link active" data-scroll-target="#about-me">About Me</a></li>
-  <li><a href="#lets-connect" id="toc-lets-connect" class="nav-link" data-scroll-target="#lets-connect">Let’s Connect</a></li>
+  <li><a href="#what-youll-find" id="toc-what-youll-find" class="nav-link active" data-scroll-target="#what-youll-find">What You’ll Find</a></li>
   </ul>
 </nav>
-    </div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(5)</span></div><div class="category" data-category="QW5hbHl0aWNz">Analytics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="QW5hbHl0aWNzJTIwTW9kZWxpbmc=">Analytics Modeling <span class="quarto-category-count">(1)</span></div><div class="category" data-category="QXR0cmlidXRpb24=">Attribution <span class="quarto-category-count">(1)</span></div><div class="category" data-category="QXVkaWVuY2UlMjBBbmFseXNpcw==">Audience Analysis <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Q2FtcGFpZ24lMjBPcHRpbWl6YXRpb24=">Campaign Optimization <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Q2x1c3RlcmluZw==">Clustering <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Q29tcGV0aXRpdmUlMjBBbmFseXNpcw==">Competitive Analysis <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Q29udGVudCUyMFN0cmF0ZWd5">Content Strategy <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Q3VzdG9tZXIlMjBJbnNpZ2h0cw==">Customer Insights <span class="quarto-category-count">(2)</span></div><div class="category" data-category="RGFzaGJvYXJkaW5n">Dashboarding <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RGF0YSUyMFNjaWVuY2U=">Data Science <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RGF0YSUyMFZpc3VhbGl6YXRpb24=">Data Visualization <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RGlnaXRhbCUyMFN0cmF0ZWd5">Digital Strategy <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RW5nYWdlbWVudCUyME1ldHJpY3M=">Engagement Metrics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="S2V5d29yZCUyMFJlc2VhcmNo">Keyword Research <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TWFjaGluZSUyMExlYXJuaW5n">Machine Learning <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TWFya2V0aW5nJTIwQW5hbHl0aWNz">Marketing Analytics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TWFya2V0aW5nJTIwRnVubmVs">Marketing Funnel <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TWFya2V0aW5nJTIwU3RyYXRlZ3k=">Marketing Strategy <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UGVyZm9ybWFuY2UlMjBNZXRyaWNz">Performance Metrics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="U0VP">SEO <span class="quarto-category-count">(1)</span></div><div class="category" data-category="U2VhcmNoJTIwUmFua2luZ3M=">Search Rankings <span class="quarto-category-count">(1)</span></div><div class="category" data-category="U2VnbWVudGF0aW9u">Segmentation <span class="quarto-category-count">(1)</span></div><div class="category" data-category="U29jaWFsJTIwTWVkaWE=">Social Media <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Hi, I’m George Barahona</h1>
+<h1 class="title">Marketing Analytics</h1>
 </div>
 
-<div>
-  <div class="description">
-    George Barahona - Data-Driven Marketing Analyst with expertise in CRM, Digital Strategy, and Data Visualization.
-  </div>
-</div>
 
 
 <div class="quarto-title-meta">
@@ -149,37 +201,227 @@ ul.task-list li input[type="checkbox"] {
   </div>
   
 
-<div>
-  <div class="keywords">
-    <div class="block-title">Keywords</div>
-    <p>George Barahona, Marketing Analytics, Digital Marketing, CRM, R, Shiny</p>
-  </div>
-</div>
 
 </header>
 
 
-<div class="columns">
-<div class="column" style="width:30%;">
-<p><img src="link.jpeg" class="img-fluid" style="border-radius: 50%;;width:50.0%"></p>
-</div><div class="column" style="padding-left: 3rem;">
-<p>With a strong background in data analysis, marketing strategy, and customer relationship management. Currently serving as an Individual Member Coordinator at the Specialty Equipment Market Association (SEMA), I bring a blend of analytical skills and marketing expertise to drive membership growth and enhance user experiences.</p>
-</div>
-</div>
-<section id="about-me" class="level2">
-<h2 class="anchored" data-anchor-id="about-me">About Me</h2>
-<p>My goal is to leverage data driven insights to develop innovative marketing strategies that enhance brand engagement and drive business growth. I am passionate about combining my technical skills in data analytics with my understanding of marketing principles to create impactful digital marketing campaigns that deliver measurable results.</p>
-</section>
-<section id="lets-connect" class="level2">
-<h2 class="anchored" data-anchor-id="lets-connect">Let’s Connect</h2>
-<p>You can <a href="mailto:gbarahona1019@gmail.com">email me</a> or connect on <a href="https://www.linkedin.com/in/george--barahona-">LinkedIn</a></p>
+<p>Shiny is a powerful R package that makes it easy to build interactive web applications directly from R. Shiny allows data analysts and scientists to create responsive web applications without requiring expertise in web development technologies like HTML, CSS, or JavaScript.</p>
+<p>Whether developing dashboards, analyzing campaign performance, or uncovering insights through SEO and web analytics, each project is rooted in turning complex marketing data into clear, actionable strategies.</p>
+<section id="what-youll-find" class="level2">
+<h2 class="anchored" data-anchor-id="what-youll-find">What You’ll Find</h2>
+<ul>
+<li><strong>User Interface (UI)</strong> The UI defines the layout and appearance of your application. It controls what users see and how they interact with your application. In Shiny, the UI is typically created using a variety of layout functions and input widgets.</li>
+<li><strong>Data Visualization:</strong> Marketing teams need to constantly monitor and analyze campaign performance. A Shiny dashboard can pull data from various sources (Google Analytics, social media platforms, email marketing tools) and provide a unified view of performance metrics.</li>
+<li><strong>Customer &amp; Market Insights:</strong> Using analytics to better understand user behavior and optimize experiences.</li>
+</ul>
 <hr>
-<p><em>Welcome to my portfolio.</em></p>
+
 
 
 </section>
 
-</main> <!-- /main -->
+<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="U29jaWFsJTIwTWVkaWElMkNFbmdhZ2VtZW50JTIwTWV0cmljcyUyQ0NvbnRlbnQlMjBTdHJhdGVneSUyQ0F1ZGllbmNlJTIwQW5hbHlzaXMlMkNBbmFseXRpY3M=" data-listing-file-modified-sort="1747101229608" data-listing-reading-time-sort="1" data-listing-word-count-sort="92">
+<a href="./listings/05-social-media-engagement.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://placehold.co/600x400?text=Social+Media+Analysis" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Social Media Engagement Analysis
+</h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('U29jaWFsJTIwTWVkaWE='); return false;">
+Social Media
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('RW5nYWdlbWVudCUyME1ldHJpY3M='); return false;">
+Engagement Metrics
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Q29udGVudCUyMFN0cmF0ZWd5'); return false;">
+Content Strategy
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('QXVkaWVuY2UlMjBBbmFseXNpcw=='); return false;">
+Audience Analysis
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('QW5hbHl0aWNz'); return false;">
+Analytics
+</div>
+</div>
+<div class="card-text listing-description">
+This analysis examined engagement metrics across multiple social media platforms to identify content trends, audience preferences, and posting strategies that drive…
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="QXR0cmlidXRpb24lMkNNYXJrZXRpbmclMjBGdW5uZWwlMkNDYW1wYWlnbiUyME9wdGltaXphdGlvbiUyQ0FuYWx5dGljcyUyME1vZGVsaW5nJTJDRGF0YSUyMFNjaWVuY2U=" data-listing-file-modified-sort="1747101229607" data-listing-reading-time-sort="1" data-listing-word-count-sort="93">
+<a href="./listings/04-funnel-attribution-model.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://placehold.co/600x400?text=Attribution+Model" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Marketing Funnel Attribution Model
+</h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('QXR0cmlidXRpb24='); return false;">
+Attribution
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('TWFya2V0aW5nJTIwRnVubmVs'); return false;">
+Marketing Funnel
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Q2FtcGFpZ24lMjBPcHRpbWl6YXRpb24='); return false;">
+Campaign Optimization
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('QW5hbHl0aWNzJTIwTW9kZWxpbmc='); return false;">
+Analytics Modeling
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('RGF0YSUyMFNjaWVuY2U='); return false;">
+Data Science
+</div>
+</div>
+<div class="card-text listing-description">
+This project developed a marketing attribution model to assign credit to touchpoints throughout the conversion journey. The insights supported channel optimization and…
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="Q3VzdG9tZXIlMjBJbnNpZ2h0cyUyQ1NlZ21lbnRhdGlvbiUyQ01hY2hpbmUlMjBMZWFybmluZyUyQ0NsdXN0ZXJpbmclMkNNYXJrZXRpbmclMjBTdHJhdGVneQ==" data-listing-file-modified-sort="1747101229607" data-listing-reading-time-sort="1" data-listing-word-count-sort="93">
+<a href="./listings/03-customer-segmentation-clustering.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://placehold.co/600x400?text=Customer+Segmentation" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Customer Segmentation Using Clustering
+</h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Q3VzdG9tZXIlMjBJbnNpZ2h0cw=='); return false;">
+Customer Insights
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('U2VnbWVudGF0aW9u'); return false;">
+Segmentation
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('TWFjaGluZSUyMExlYXJuaW5n'); return false;">
+Machine Learning
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Q2x1c3RlcmluZw=='); return false;">
+Clustering
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('TWFya2V0aW5nJTIwU3RyYXRlZ3k='); return false;">
+Marketing Strategy
+</div>
+</div>
+<div class="card-text listing-description">
+In this analysis, customer data was segmented using clustering algorithms to identify meaningful groups. These segments informed targeting strategies and personalization…
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="3" data-categories="U0VPJTJDQ29tcGV0aXRpdmUlMjBBbmFseXNpcyUyQ0tleXdvcmQlMjBSZXNlYXJjaCUyQ0RpZ2l0YWwlMjBTdHJhdGVneSUyQ1NlYXJjaCUyMFJhbmtpbmdz" data-listing-file-modified-sort="1747101229606" data-listing-reading-time-sort="1" data-listing-word-count-sort="97">
+<a href="./listings/02-seo-benchmarking-analysis.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://placehold.co/600x400?text=SEO+Analysis" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+SEO Benchmarking Analysis
+</h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('U0VP'); return false;">
+SEO
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Q29tcGV0aXRpdmUlMjBBbmFseXNpcw=='); return false;">
+Competitive Analysis
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('S2V5d29yZCUyMFJlc2VhcmNo'); return false;">
+Keyword Research
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('RGlnaXRhbCUyMFN0cmF0ZWd5'); return false;">
+Digital Strategy
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('U2VhcmNoJTIwUmFua2luZ3M='); return false;">
+Search Rankings
+</div>
+</div>
+<div class="card-text listing-description">
+This project compared SEO performance across competitors, highlighting keyword gaps, backlink profiles, and content effectiveness. Insights were used to guide an improved…
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="4" data-categories="RGFzaGJvYXJkaW5nJTJDTWFya2V0aW5nJTIwQW5hbHl0aWNzJTJDRGF0YSUyMFZpc3VhbGl6YXRpb24lMkNQZXJmb3JtYW5jZSUyME1ldHJpY3MlMkNDdXN0b21lciUyMEluc2lnaHRz" data-listing-file-modified-sort="1747101229606" data-listing-reading-time-sort="1" data-listing-word-count-sort="99">
+<a href="./listings/01-campaign-insights-dashboard.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://placehold.co/600x400?text=Campaign+Dashboard" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Campaign Insights Dashboard
+</h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('RGFzaGJvYXJkaW5n'); return false;">
+Dashboarding
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('TWFya2V0aW5nJTIwQW5hbHl0aWNz'); return false;">
+Marketing Analytics
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('RGF0YSUyMFZpc3VhbGl6YXRpb24='); return false;">
+Data Visualization
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('UGVyZm9ybWFuY2UlMjBNZXRyaWNz'); return false;">
+Performance Metrics
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Q3VzdG9tZXIlMjBJbnNpZ2h0cw=='); return false;">
+Customer Insights
+</div>
+</div>
+<div class="card-text listing-description">
+This project involved building a dashboard to track and visualize marketing campaign performance. Metrics like click-through rate, conversion rate, and ROI were tracked…
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
