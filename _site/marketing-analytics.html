@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Marketing Analytics – YOUR NAME</title>
+<title>Marketing Analytics – George Barahona</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -68,65 +66,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
@@ -138,7 +78,7 @@ window.Quarto = {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">YOUR NAME</span>
+    <span class="navbar-title">George Barahona</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -171,7 +111,7 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
@@ -179,12 +119,25 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#what-youll-find" id="toc-what-youll-find" class="nav-link active" data-scroll-target="#what-youll-find">What You’ll Find</a></li>
+  <li><a href="#project-1-apartment-price-prediction-dallas" id="toc-project-1-apartment-price-prediction-dallas" class="nav-link active" data-scroll-target="#project-1-apartment-price-prediction-dallas">📈 Project 1: Apartment Price Prediction (Dallas)</a></li>
+  <li><a href="#analytics-objective-4-impact-of-price-sensitivity-on-brand-preference" id="toc-analytics-objective-4-impact-of-price-sensitivity-on-brand-preference" class="nav-link" data-scroll-target="#analytics-objective-4-impact-of-price-sensitivity-on-brand-preference">🎯 Analytics Objective 4: Impact of Price Sensitivity on Brand Preference</a>
+  <ul class="collapse">
+  <li><a href="#methodology" id="toc-methodology" class="nav-link" data-scroll-target="#methodology">🧪 Methodology:</a></li>
+  <li><a href="#key-findings" id="toc-key-findings" class="nav-link" data-scroll-target="#key-findings">📈 Key Findings:</a></li>
+  </ul></li>
+  <li><a href="#project-3-evaluating-marketing-roi" id="toc-project-3-evaluating-marketing-roi" class="nav-link" data-scroll-target="#project-3-evaluating-marketing-roi">Project 3: Evaluating Marketing ROI</a>
+  <ul class="collapse">
+  <li><a href="#key-objectives" id="toc-key-objectives" class="nav-link" data-scroll-target="#key-objectives">Key Objectives:</a></li>
+  </ul></li>
+  <li><a href="#project-4-marketing-mix-modeling-mmm" id="toc-project-4-marketing-mix-modeling-mmm" class="nav-link" data-scroll-target="#project-4-marketing-mix-modeling-mmm">Project 4: Marketing Mix Modeling (MMM)</a>
+  <ul class="collapse">
+  <li><a href="#highlights" id="toc-highlights" class="nav-link" data-scroll-target="#highlights">Highlights:</a></li>
+  </ul></li>
   </ul>
 </nav>
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(5)</span></div><div class="category" data-category="QW5hbHl0aWNz">Analytics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="QW5hbHl0aWNzJTIwTW9kZWxpbmc=">Analytics Modeling <span class="quarto-category-count">(1)</span></div><div class="category" data-category="QXR0cmlidXRpb24=">Attribution <span class="quarto-category-count">(1)</span></div><div class="category" data-category="QXVkaWVuY2UlMjBBbmFseXNpcw==">Audience Analysis <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Q2FtcGFpZ24lMjBPcHRpbWl6YXRpb24=">Campaign Optimization <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Q2x1c3RlcmluZw==">Clustering <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Q29tcGV0aXRpdmUlMjBBbmFseXNpcw==">Competitive Analysis <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Q29udGVudCUyMFN0cmF0ZWd5">Content Strategy <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Q3VzdG9tZXIlMjBJbnNpZ2h0cw==">Customer Insights <span class="quarto-category-count">(2)</span></div><div class="category" data-category="RGFzaGJvYXJkaW5n">Dashboarding <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RGF0YSUyMFNjaWVuY2U=">Data Science <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RGF0YSUyMFZpc3VhbGl6YXRpb24=">Data Visualization <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RGlnaXRhbCUyMFN0cmF0ZWd5">Digital Strategy <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RW5nYWdlbWVudCUyME1ldHJpY3M=">Engagement Metrics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="S2V5d29yZCUyMFJlc2VhcmNo">Keyword Research <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TWFjaGluZSUyMExlYXJuaW5n">Machine Learning <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TWFya2V0aW5nJTIwQW5hbHl0aWNz">Marketing Analytics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TWFya2V0aW5nJTIwRnVubmVs">Marketing Funnel <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TWFya2V0aW5nJTIwU3RyYXRlZ3k=">Marketing Strategy <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UGVyZm9ybWFuY2UlMjBNZXRyaWNz">Performance Metrics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="U0VP">SEO <span class="quarto-category-count">(1)</span></div><div class="category" data-category="U2VhcmNoJTIwUmFua2luZ3M=">Search Rankings <span class="quarto-category-count">(1)</span></div><div class="category" data-category="U2VnbWVudGF0aW9u">Segmentation <span class="quarto-category-count">(1)</span></div><div class="category" data-category="U29jaWFsJTIwTWVkaWE=">Social Media <span class="quarto-category-count">(1)</span></div></div></div>
+    </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-page-left" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -193,7 +146,7 @@ window.Quarto = {
 
 
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page-left">
 
     
   
@@ -205,223 +158,221 @@ window.Quarto = {
 </header>
 
 
-<p>Shiny is a powerful R package that makes it easy to build interactive web applications directly from R. Shiny allows data analysts and scientists to create responsive web applications without requiring expertise in web development technologies like HTML, CSS, or JavaScript.</p>
-<p>Whether developing dashboards, analyzing campaign performance, or uncovering insights through SEO and web analytics, each project is rooted in turning complex marketing data into clear, actionable strategies.</p>
-<section id="what-youll-find" class="level2">
-<h2 class="anchored" data-anchor-id="what-youll-find">What You’ll Find</h2>
+<section id="project-1-apartment-price-prediction-dallas" class="level2">
+<h2 class="anchored" data-anchor-id="project-1-apartment-price-prediction-dallas">📈 Project 1: Apartment Price Prediction (Dallas)</h2>
+<p>This project used a dataset of over 100K rental listings, filtered to Dallas, to predict prices based on size, features, and amenities.</p>
+<p><strong>Highlights:</strong><br>
+- Used <code>tidyverse</code>, <code>caret</code>, and <code>randomForest</code><br>
+- Created <code>price_per_sqft</code>, <code>num_amenities</code>, and binary flags<br>
+- Compared Linear Regression vs.&nbsp;Random Forest</p>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Model</th>
+<th style="text-align: right;">RMSE</th>
+<th style="text-align: right;">MAE</th>
+<th style="text-align: right;">R2</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Linear Regression</td>
+<td style="text-align: right;">450</td>
+<td style="text-align: right;">300</td>
+<td style="text-align: right;">0.65</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Random Forest</td>
+<td style="text-align: right;">320</td>
+<td style="text-align: right;">220</td>
+<td style="text-align: right;">0.78</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'ggplot2' was built under R version 4.4.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>`geom_smooth()` using formula = 'y ~ x'</code></pre>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="marketing-analytics_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="analytics-objective-4-impact-of-price-sensitivity-on-brand-preference" class="level2">
+<h2 class="anchored" data-anchor-id="analytics-objective-4-impact-of-price-sensitivity-on-brand-preference">🎯 Analytics Objective 4: Impact of Price Sensitivity on Brand Preference</h2>
+<p>The objective was to assess whether <strong>price sensitivity</strong> influences <strong>car brand preferences</strong> among different income levels and age groups.</p>
+<section id="methodology" class="level3">
+<h3 class="anchored" data-anchor-id="methodology">🧪 Methodology:</h3>
 <ul>
-<li><strong>User Interface (UI)</strong> The UI defines the layout and appearance of your application. It controls what users see and how they interact with your application. In Shiny, the UI is typically created using a variety of layout functions and input widgets.</li>
-<li><strong>Data Visualization:</strong> Marketing teams need to constantly monitor and analyze campaign performance. A Shiny dashboard can pull data from various sources (Google Analytics, social media platforms, email marketing tools) and provide a unified view of performance metrics.</li>
-<li><strong>Customer &amp; Market Insights:</strong> Using analytics to better understand user behavior and optimize experiences.</li>
+<li>Used survey data cleaned and imputed using <code>tidyverse</code> and <code>VIM</code>.</li>
+<li>Applied <strong>two-way ANOVA</strong> to test interaction between <strong>income level</strong> and <strong>age group</strong>.</li>
+<li>Used <strong>multiple linear regression</strong> to explore how perceptions of pricing, features, and reliability affect brand preference.</li>
 </ul>
-<hr>
+</section>
+<section id="key-findings" class="level3">
+<h3 class="anchored" data-anchor-id="key-findings">📈 Key Findings:</h3>
+<ul>
+<li>There is a <strong>significant interaction</strong> between income and age when it comes to selecting car brands.</li>
+<li><strong>Price sensitivity</strong> (question q1_1_1) is a <strong>strong predictor</strong> of brand preference (q1_5_1).</li>
+<li>Variables such as <strong>feature desirability</strong> and <strong>vehicle reliability</strong> also had statistically significant influence on choices.</li>
+</ul>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<caption>Regression Summary: Car Brand Preference Predictors</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Predictor</th>
+<th style="text-align: right;">Coefficient</th>
+<th style="text-align: right;">P_Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Price Sensitivity</td>
+<td style="text-align: right;">-0.42</td>
+<td style="text-align: right;">0.001</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Feature Importance</td>
+<td style="text-align: right;">0.30</td>
+<td style="text-align: right;">0.014</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Reliability</td>
+<td style="text-align: right;">0.25</td>
+<td style="text-align: right;">0.023</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Income Level</td>
+<td style="text-align: right;">0.15</td>
+<td style="text-align: right;">0.070</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Age Group</td>
+<td style="text-align: right;">-0.20</td>
+<td style="text-align: right;">0.049</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output cell-output-stderr">
+<pre><code>`geom_smooth()` using formula = 'y ~ x'</code></pre>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="marketing-analytics_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="project-3-evaluating-marketing-roi" class="level2">
+<h2 class="anchored" data-anchor-id="project-3-evaluating-marketing-roi">Project 3: Evaluating Marketing ROI</h2>
+<p>This project evaluated campaign return on investment (ROI) across multiple channels using R.</p>
+<section id="key-objectives" class="level3">
+<h3 class="anchored" data-anchor-id="key-objectives">Key Objectives:</h3>
+<p>Identify which digital channels (email, social, paid search) provide the highest return. Use KPIs (e.g., impressions, clicks, conversions) to calculate cost-per-lead and ROI. Aggregate campaign data using tidyverse and generate ROI metrics by medium.</p>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<caption>Marketing Channel ROI</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Channel</th>
+<th style="text-align: right;">Spend</th>
+<th style="text-align: right;">Revenue</th>
+<th style="text-align: right;">ROI</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Email</td>
+<td style="text-align: right;">1000</td>
+<td style="text-align: right;">5000</td>
+<td style="text-align: right;">400.0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Social Media</td>
+<td style="text-align: right;">1500</td>
+<td style="text-align: right;">4000</td>
+<td style="text-align: right;">166.7</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Search Ads</td>
+<td style="text-align: right;">2000</td>
+<td style="text-align: right;">6000</td>
+<td style="text-align: right;">200.0</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+</section>
+<section id="project-4-marketing-mix-modeling-mmm" class="level2">
+<h2 class="anchored" data-anchor-id="project-4-marketing-mix-modeling-mmm">Project 4: Marketing Mix Modeling (MMM)</h2>
+<p>The MMM analysis investigates how different marketing inputs affect sales over time using regression and time series modeling.</p>
+<section id="highlights" class="level3">
+<h3 class="anchored" data-anchor-id="highlights">Highlights:</h3>
+<p>Modeled sales as a function of TV, radio, and digital ad spend.</p>
+<p>Identified lag effects and diminishing returns using logarithmic and polynomial terms.</p>
+<p>Used lm() and ggplot2 to interpret and visualize results.</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+lm(formula = sales ~ tv_spend + digital_spend + I(tv_spend^2), 
+    data = df)
 
+Residuals:
+   Min     1Q Median     3Q    Max 
+-12847  -2636    300   2611   9223 
+
+Coefficients:
+                Estimate Std. Error t value Pr(&gt;|t|)  
+(Intercept)    1.923e+03  9.930e+03   0.194   0.8468  
+tv_spend       4.080e+00  1.878e+00   2.173   0.0322 *
+digital_spend -4.366e-01  4.124e-01  -1.059   0.2923  
+I(tv_spend^2) -1.975e-04  9.239e-05  -2.138   0.0351 *
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 4086 on 96 degrees of freedom
+Multiple R-squared:  0.06711,   Adjusted R-squared:  0.03796 
+F-statistic: 2.302 on 3 and 96 DF,  p-value: 0.08198</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="marketing-analytics_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
 
 
 </section>
+</section>
 
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="U29jaWFsJTIwTWVkaWElMkNFbmdhZ2VtZW50JTIwTWV0cmljcyUyQ0NvbnRlbnQlMjBTdHJhdGVneSUyQ0F1ZGllbmNlJTIwQW5hbHlzaXMlMkNBbmFseXRpY3M=" data-listing-file-modified-sort="1747101229608" data-listing-reading-time-sort="1" data-listing-word-count-sort="92">
-<a href="./listings/05-social-media-engagement.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="https://placehold.co/600x400?text=Social+Media+Analysis" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Social Media Engagement Analysis
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('U29jaWFsJTIwTWVkaWE='); return false;">
-Social Media
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('RW5nYWdlbWVudCUyME1ldHJpY3M='); return false;">
-Engagement Metrics
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Q29udGVudCUyMFN0cmF0ZWd5'); return false;">
-Content Strategy
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('QXVkaWVuY2UlMjBBbmFseXNpcw=='); return false;">
-Audience Analysis
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('QW5hbHl0aWNz'); return false;">
-Analytics
-</div>
-</div>
-<div class="card-text listing-description">
-This analysis examined engagement metrics across multiple social media platforms to identify content trends, audience preferences, and posting strategies that drive…
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="QXR0cmlidXRpb24lMkNNYXJrZXRpbmclMjBGdW5uZWwlMkNDYW1wYWlnbiUyME9wdGltaXphdGlvbiUyQ0FuYWx5dGljcyUyME1vZGVsaW5nJTJDRGF0YSUyMFNjaWVuY2U=" data-listing-file-modified-sort="1747101229607" data-listing-reading-time-sort="1" data-listing-word-count-sort="93">
-<a href="./listings/04-funnel-attribution-model.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="https://placehold.co/600x400?text=Attribution+Model" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Marketing Funnel Attribution Model
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('QXR0cmlidXRpb24='); return false;">
-Attribution
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('TWFya2V0aW5nJTIwRnVubmVs'); return false;">
-Marketing Funnel
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Q2FtcGFpZ24lMjBPcHRpbWl6YXRpb24='); return false;">
-Campaign Optimization
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('QW5hbHl0aWNzJTIwTW9kZWxpbmc='); return false;">
-Analytics Modeling
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('RGF0YSUyMFNjaWVuY2U='); return false;">
-Data Science
-</div>
-</div>
-<div class="card-text listing-description">
-This project developed a marketing attribution model to assign credit to touchpoints throughout the conversion journey. The insights supported channel optimization and…
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="Q3VzdG9tZXIlMjBJbnNpZ2h0cyUyQ1NlZ21lbnRhdGlvbiUyQ01hY2hpbmUlMjBMZWFybmluZyUyQ0NsdXN0ZXJpbmclMkNNYXJrZXRpbmclMjBTdHJhdGVneQ==" data-listing-file-modified-sort="1747101229607" data-listing-reading-time-sort="1" data-listing-word-count-sort="93">
-<a href="./listings/03-customer-segmentation-clustering.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="https://placehold.co/600x400?text=Customer+Segmentation" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Customer Segmentation Using Clustering
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Q3VzdG9tZXIlMjBJbnNpZ2h0cw=='); return false;">
-Customer Insights
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('U2VnbWVudGF0aW9u'); return false;">
-Segmentation
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('TWFjaGluZSUyMExlYXJuaW5n'); return false;">
-Machine Learning
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Q2x1c3RlcmluZw=='); return false;">
-Clustering
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('TWFya2V0aW5nJTIwU3RyYXRlZ3k='); return false;">
-Marketing Strategy
-</div>
-</div>
-<div class="card-text listing-description">
-In this analysis, customer data was segmented using clustering algorithms to identify meaningful groups. These segments informed targeting strategies and personalization…
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="3" data-categories="U0VPJTJDQ29tcGV0aXRpdmUlMjBBbmFseXNpcyUyQ0tleXdvcmQlMjBSZXNlYXJjaCUyQ0RpZ2l0YWwlMjBTdHJhdGVneSUyQ1NlYXJjaCUyMFJhbmtpbmdz" data-listing-file-modified-sort="1747101229606" data-listing-reading-time-sort="1" data-listing-word-count-sort="97">
-<a href="./listings/02-seo-benchmarking-analysis.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="https://placehold.co/600x400?text=SEO+Analysis" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-SEO Benchmarking Analysis
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('U0VP'); return false;">
-SEO
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Q29tcGV0aXRpdmUlMjBBbmFseXNpcw=='); return false;">
-Competitive Analysis
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('S2V5d29yZCUyMFJlc2VhcmNo'); return false;">
-Keyword Research
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('RGlnaXRhbCUyMFN0cmF0ZWd5'); return false;">
-Digital Strategy
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('U2VhcmNoJTIwUmFua2luZ3M='); return false;">
-Search Rankings
-</div>
-</div>
-<div class="card-text listing-description">
-This project compared SEO performance across competitors, highlighting keyword gaps, backlink profiles, and content effectiveness. Insights were used to guide an improved…
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="4" data-categories="RGFzaGJvYXJkaW5nJTJDTWFya2V0aW5nJTIwQW5hbHl0aWNzJTJDRGF0YSUyMFZpc3VhbGl6YXRpb24lMkNQZXJmb3JtYW5jZSUyME1ldHJpY3MlMkNDdXN0b21lciUyMEluc2lnaHRz" data-listing-file-modified-sort="1747101229606" data-listing-reading-time-sort="1" data-listing-word-count-sort="99">
-<a href="./listings/01-campaign-insights-dashboard.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="https://placehold.co/600x400?text=Campaign+Dashboard" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Campaign Insights Dashboard
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('RGFzaGJvYXJkaW5n'); return false;">
-Dashboarding
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('TWFya2V0aW5nJTIwQW5hbHl0aWNz'); return false;">
-Marketing Analytics
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('RGF0YSUyMFZpc3VhbGl6YXRpb24='); return false;">
-Data Visualization
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('UGVyZm9ybWFuY2UlMjBNZXRyaWNz'); return false;">
-Performance Metrics
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Q3VzdG9tZXIlMjBJbnNpZ2h0cw=='); return false;">
-Customer Insights
-</div>
-</div>
-<div class="card-text listing-description">
-This project involved building a dashboard to track and visualize marketing campaign performance. Metrics like click-through rate, conversion rate, and ROI were tracked…
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

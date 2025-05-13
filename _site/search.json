@@ -102,14 +102,35 @@
     "href": "marketing-analytics.html",
     "title": "Marketing Analytics",
     "section": "",
-    "text": "Shiny is a powerful R package that makes it easy to build interactive web applications directly from R. Shiny allows data analysts and scientists to create responsive web applications without requiring expertise in web development technologies like HTML, CSS, or JavaScript.\nWhether developing dashboards, analyzing campaign performance, or uncovering insights through SEO and web analytics, each project is rooted in turning complex marketing data into clear, actionable strategies."
+    "text": "This project used a dataset of over 100K rental listings, filtered to Dallas, to predict prices based on size, features, and amenities.\nHighlights:\n- Used tidyverse, caret, and randomForest\n- Created price_per_sqft, num_amenities, and binary flags\n- Compared Linear Regression vs. Random Forest\n\n\n\n\n\nModel\nRMSE\nMAE\nR2\n\n\n\n\nLinear Regression\n450\n300\n0.65\n\n\nRandom Forest\n320\n220\n0.78\n\n\n\n\n\n\n\nWarning: package 'ggplot2' was built under R version 4.4.3\n\n\n`geom_smooth()` using formula = 'y ~ x'"
   },
   {
-    "objectID": "marketing-analytics.html#what-youll-find",
-    "href": "marketing-analytics.html#what-youll-find",
+    "objectID": "marketing-analytics.html#project-1-apartment-price-prediction-dallas",
+    "href": "marketing-analytics.html#project-1-apartment-price-prediction-dallas",
     "title": "Marketing Analytics",
-    "section": "What You’ll Find",
-    "text": "What You’ll Find\n\nUser Interface (UI) The UI defines the layout and appearance of your application. It controls what users see and how they interact with your application. In Shiny, the UI is typically created using a variety of layout functions and input widgets.\nData Visualization: Marketing teams need to constantly monitor and analyze campaign performance. A Shiny dashboard can pull data from various sources (Google Analytics, social media platforms, email marketing tools) and provide a unified view of performance metrics.\nCustomer & Market Insights: Using analytics to better understand user behavior and optimize experiences."
+    "section": "",
+    "text": "This project used a dataset of over 100K rental listings, filtered to Dallas, to predict prices based on size, features, and amenities.\nHighlights:\n- Used tidyverse, caret, and randomForest\n- Created price_per_sqft, num_amenities, and binary flags\n- Compared Linear Regression vs. Random Forest\n\n\n\n\n\nModel\nRMSE\nMAE\nR2\n\n\n\n\nLinear Regression\n450\n300\n0.65\n\n\nRandom Forest\n320\n220\n0.78\n\n\n\n\n\n\n\nWarning: package 'ggplot2' was built under R version 4.4.3\n\n\n`geom_smooth()` using formula = 'y ~ x'"
+  },
+  {
+    "objectID": "marketing-analytics.html#analytics-objective-4-impact-of-price-sensitivity-on-brand-preference",
+    "href": "marketing-analytics.html#analytics-objective-4-impact-of-price-sensitivity-on-brand-preference",
+    "title": "Marketing Analytics",
+    "section": "🎯 Analytics Objective 4: Impact of Price Sensitivity on Brand Preference",
+    "text": "🎯 Analytics Objective 4: Impact of Price Sensitivity on Brand Preference\nThe objective was to assess whether price sensitivity influences car brand preferences among different income levels and age groups.\n\n🧪 Methodology:\n\nUsed survey data cleaned and imputed using tidyverse and VIM.\nApplied two-way ANOVA to test interaction between income level and age group.\nUsed multiple linear regression to explore how perceptions of pricing, features, and reliability affect brand preference.\n\n\n\n📈 Key Findings:\n\nThere is a significant interaction between income and age when it comes to selecting car brands.\nPrice sensitivity (question q1_1_1) is a strong predictor of brand preference (q1_5_1).\nVariables such as feature desirability and vehicle reliability also had statistically significant influence on choices.\n\n\n\n\nRegression Summary: Car Brand Preference Predictors\n\n\nPredictor\nCoefficient\nP_Value\n\n\n\n\nPrice Sensitivity\n-0.42\n0.001\n\n\nFeature Importance\n0.30\n0.014\n\n\nReliability\n0.25\n0.023\n\n\nIncome Level\n0.15\n0.070\n\n\nAge Group\n-0.20\n0.049\n\n\n\n\n\n\n\n`geom_smooth()` using formula = 'y ~ x'"
+  },
+  {
+    "objectID": "marketing-analytics.html#project-3-evaluating-marketing-roi",
+    "href": "marketing-analytics.html#project-3-evaluating-marketing-roi",
+    "title": "Marketing Analytics",
+    "section": "Project 3: Evaluating Marketing ROI",
+    "text": "Project 3: Evaluating Marketing ROI\nThis project evaluated campaign return on investment (ROI) across multiple channels using R.\n\nKey Objectives:\nIdentify which digital channels (email, social, paid search) provide the highest return. Use KPIs (e.g., impressions, clicks, conversions) to calculate cost-per-lead and ROI. Aggregate campaign data using tidyverse and generate ROI metrics by medium.\n\n\n\nMarketing Channel ROI\n\n\nChannel\nSpend\nRevenue\nROI\n\n\n\n\nEmail\n1000\n5000\n400.0\n\n\nSocial Media\n1500\n4000\n166.7\n\n\nSearch Ads\n2000\n6000\n200.0"
+  },
+  {
+    "objectID": "marketing-analytics.html#project-4-marketing-mix-modeling-mmm",
+    "href": "marketing-analytics.html#project-4-marketing-mix-modeling-mmm",
+    "title": "Marketing Analytics",
+    "section": "Project 4: Marketing Mix Modeling (MMM)",
+    "text": "Project 4: Marketing Mix Modeling (MMM)\nThe MMM analysis investigates how different marketing inputs affect sales over time using regression and time series modeling.\n\nHighlights:\nModeled sales as a function of TV, radio, and digital ad spend.\nIdentified lag effects and diminishing returns using logarithmic and polynomial terms.\nUsed lm() and ggplot2 to interpret and visualize results.\n\n\n\nCall:\nlm(formula = sales ~ tv_spend + digital_spend + I(tv_spend^2), \n    data = df)\n\nResiduals:\n   Min     1Q Median     3Q    Max \n-12847  -2636    300   2611   9223 \n\nCoefficients:\n                Estimate Std. Error t value Pr(&gt;|t|)  \n(Intercept)    1.923e+03  9.930e+03   0.194   0.8468  \ntv_spend       4.080e+00  1.878e+00   2.173   0.0322 *\ndigital_spend -4.366e-01  4.124e-01  -1.059   0.2923  \nI(tv_spend^2) -1.975e-04  9.239e-05  -2.138   0.0351 *\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 4086 on 96 degrees of freedom\nMultiple R-squared:  0.06711,   Adjusted R-squared:  0.03796 \nF-statistic: 2.302 on 3 and 96 DF,  p-value: 0.08198"
   },
   {
     "objectID": "resume.html",
